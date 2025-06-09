@@ -15,7 +15,7 @@ func main() {
 	log.SetFlags(0)
 
 	// Request a greeting message.
-	message, err := greetings.Hello("")
+	message, err := greetings.Hello("tester")
 	// If an error was returned, print it to the console and
 	// exit the program.
 	if err != nil {
@@ -25,4 +25,16 @@ func main() {
 	// If no error was returned, print the returned message
 	// to the console.
 	fmt.Println(message)
+
+	// Request a random greeting message.
+	message2, err2 := greetings.RandomGreeting()
+	// If an error was returned, print it to the console and
+	// exit the program.
+	if err2 != nil {
+		log.Fatal(err2)
+	}
+
+	// If no error was returned, print the returned message
+	// to the console.
+	fmt.Println(message2)
 }
