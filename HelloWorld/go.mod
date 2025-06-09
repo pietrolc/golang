@@ -1,5 +1,7 @@
-module HelloWorld
+// module HelloWorld
+module github.com/pietrolc/golang/HelloWorld
 
+// This module is a simple example of a Go module that prints a list of quotes.
 go 1.24.4
 
 require rsc.io/quote v1.5.2
